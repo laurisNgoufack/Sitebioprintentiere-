@@ -1,0 +1,48 @@
+.info{
+.image{
+padding: 0;
+width: 100%;
+  .images{
+    width: 100%;
+  }
+}
+.container-serif{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 5rem 0.5rem 5rem ;
+  .item-serif1{
+    .titre{
+      margin-bottom: 1rem;
+      border-left:  1px solid var(--primary);
+      padding: 10px;
+    
+    }
+    p{
+      color:var(--gry);
+    }
+    
+  }
+.serif {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 5rem 0.5rem 5rem ;
+  p{
+    color: black;
+  }
+  
+
+
+.serif1 {
+  flex-basis: 600px;
+  
+
+}
+
+
+}
+
+
+}
+}

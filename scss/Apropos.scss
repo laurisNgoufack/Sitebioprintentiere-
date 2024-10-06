@@ -1,0 +1,37 @@
+@import "variable";
+@import "general";
+@import "header";
+@import "footer";
+@import "animation";
+@mixin phone { 
+    @media (max-width:500px) {
+        .filtre-apropos {
+            h1{
+                color: white;
+                font-size: 10px;
+            }
+        } 
+    
+    }
+     }
+
+.apropos{
+height: 300px;
+background: url(/img/façade-femme.jpg)center center/cover;
+
+.filtre-apropos {
+
+  
+    background: rgba(2, 1, 1, 0.7) center center/cover;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 9rem;
+    h1{
+        color: white;
+        font-size: 3rem;
+    }
+  }
+   }
+  

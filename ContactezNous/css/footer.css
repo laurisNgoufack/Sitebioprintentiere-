@@ -1,0 +1,128 @@
+footer {
+  background: url(/img/Image\ footer\ 2.jpg) center center;
+  background-size: cover;
+  min-height: 80vh;
+  width: 100%;
+}
+
+.filtre {
+  width: 100%;
+  min-height: 80vh;
+  background: rgba(2, 1, 1, 0.7) center center/cover;
+  padding: 3rem 3rem 0.5rem 3rem;
+}
+.filtre .contenaire {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.filtre .contenaire .block-1 {
+  display: flex;
+  flex-flow: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  height: 400px;
+  padding-top: 9rem;
+}
+.filtre .contenaire .block-1 .text-logo {
+  display: flex;
+  justify-content: flex-start;
+}
+.filtre .contenaire .block-1 .text-logo p {
+  line-height: 6rem;
+  margin-right: 1rem;
+  font-weight: 1000;
+}
+.filtre .contenaire .block-1 p {
+  font-weight: 700;
+}
+.filtre .contenaire .block-contact {
+  min-width: 400px;
+  height: 400px;
+}
+.filtre .contenaire .block-contact h1 {
+  border-left: solid 1.5px var(--primary);
+  margin-bottom: 1rem;
+  padding-left: 0.5rem;
+  border-radius: 2px;
+  color: white;
+  font-weight: 600;
+  font-size: 15px;
+}
+.filtre .contenaire .block-contact p {
+  margin-bottom: 2rem;
+}
+.filtre .contenaire .block-contact .icone-texte {
+  margin-bottom: 2rem;
+}
+.filtre .contenaire .block-contact .icone-texte p {
+  display: inline;
+  margin: 0 1rem;
+}
+.filtre .contenaire .block-contact .icone-texte a:hover {
+  color: var(--primary);
+}
+.filtre .contenaire .block-contact i {
+  color: var(--primary);
+}
+.filtre .contenaire .block {
+  height: 400px;
+  min-width: 400px;
+  margin: 1rem 0 1rem 2rem;
+  padding-left: 10px;
+}
+.filtre .contenaire .block h1 {
+  border-left: solid 1.5px var(--primary);
+  margin-bottom: 1rem;
+  padding-left: 0.5rem;
+  border-radius: 2px;
+  color: white;
+  font-weight: 600;
+  font-size: 15px;
+}
+.filtre .contenaire .block ul {
+  list-style-type: circle;
+  margin: 1rem;
+}
+.filtre .contenaire .block ul li {
+  margin: 0 0 1rem 0;
+}
+.filtre .contenaire .block ul li :hover {
+  color: var(--primary);
+}
+.filtre .fin {
+  border-top: 1px solid var(--bleu-claire);
+  padding: 1rem 0 0 0;
+  display: flex;
+  justify-content: space-between;
+}
+.filtre .fin a {
+  border: 1px solid var(--bleu-claire);
+  height: 50px;
+  width: 50px;
+  background: none;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+}
+.filtre .fin p {
+  line-height: 1.8rem;
+}
+.filtre .fin i {
+  color: var(--primary);
+}
+.filtre .fin a:hover {
+  border: 1px solid var(--primary);
+}
+
+p {
+  font-weight: 700;
+}
+
+li {
+  font-weight: 700;
+}
+
+/*# sourceMappingURL=footer.css.map */

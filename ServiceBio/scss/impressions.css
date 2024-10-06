@@ -1,0 +1,136 @@
+:root {
+  --primary: #079926;
+  --primary1:#0799278e;
+  --bleu: #2291db;
+  --bleu-claire: #81afcf93;
+  --gry-claire: #dfe6e9;
+  --gry: #b2bec3;
+  --box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  --bleu-sombre: #0e4194;
+}
+
+.box-shadow {
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 4px 10px 4px, rgba(60, 64, 67, 0.15) 0px 4px 10px 4px;
+}
+
+.active {
+  color: var(--primary);
+  height: 100%;
+  width: 100px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+.contenaire {
+  margin: 0 5rem 0.5rem 5rem;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
+}
+
+p {
+  margin: 0;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+i {
+  color: white;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  color: white;
+}
+
+.btn {
+  width: 200px;
+  height: 30px;
+  border-radius: 2px;
+  background: var(--primary);
+  padding: 0.5rem;
+}
+
+.separator-horizontal {
+  height: 2px;
+  width: 200px;
+  background: var(--bleu);
+}
+
+span {
+  color: var(--primary);
+}
+
+strong {
+  color: var(--bleu);
+}
+
+.font {
+  font-family: "Montserrat", sans-serif;
+}
+
+.info .images {
+  background: url(/SitewebBioPrintSTEVE/img/guide.jpg) center center/cover;
+  width: 100%;
+  min-height: 50vh;
+}
+.info .images .image {
+  background: rgba(2, 1, 1, 0.7) center center/cover;
+  width: 100%;
+  min-height: 50vh;
+}
+.info .images .separator {
+  padding: 1rem 5rem 1rem 5rem;
+  padding-top: 15%;
+  text-align: center;
+}
+.info .images .separator h1 {
+  font-size: 50px;
+  color: white;
+}
+.info .container {
+  padding: 1rem 5rem 1rem 5rem;
+  min-height: 70vh;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  margin: 0 5rem 0.5rem 5rem;
+}
+.info .container p {
+  color: var(--gry);
+}
+.info .container .item h1 {
+  padding-left: 1px;
+  border-left: 1px solid var(--primary);
+}
+.info .list {
+  letter-spacing: 1px;
+  color: var(--gry);
+  padding: 1rem 5rem 1rem 5rem;
+  font-family: "Montserrat", sans-serif;
+}/*# sourceMappingURL=impressions.css.map */

@@ -1,0 +1,33 @@
+.info .image {
+  padding: 0;
+  width: 100%;
+}
+.info .image .images {
+  width: 100%;
+}
+.info .container-serif {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 5rem 0.5rem 5rem;
+}
+.info .container-serif .item-serif1 .titre {
+  margin-bottom: 1rem;
+  border-left: 1px solid var(--primary);
+  padding: 10px;
+}
+.info .container-serif .item-serif1 p {
+  color: var(--gry);
+}
+.info .container-serif .serif {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 5rem 0.5rem 5rem;
+}
+.info .container-serif .serif p {
+  color: black;
+}
+.info .container-serif .serif .serif1 {
+  flex-basis: 600px;
+}/*# sourceMappingURL=serigraphie.css.map */

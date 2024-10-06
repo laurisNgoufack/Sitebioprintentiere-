@@ -1,0 +1,220 @@
+
+.entete{
+    background: rgba(0, 0, 20, 0.9);
+    padding-bottom: 5px;
+    .partie1 {
+        display: flex;
+        margin: 0 5rem 0 5rem;
+        padding: 1rem 0 1.5rem 0;
+        height: 40px;
+        border-bottom: 1px solid var(--gry-claire);
+   
+        .gauche {
+            flex: 1;
+            i {
+                color: white;
+            }
+            a i:hover {
+                color: var(--primary);
+            }
+        }
+        .droit {
+            display: flex;
+
+            i {
+                color: var(--primary);
+            }
+
+            p a:hover {
+                color: var(--primary);
+            }
+
+            p {
+                margin: 0 0 0 1rem;
+                color: white;
+            }
+        }
+
+        .separator-vertical {
+            height: 15px;
+            width: 2px;
+            background-color: var(--bleu-claire);
+            margin: 0rem 1rem 0rem 1rem;
+        }
+
+    }
+}
+
+
+    header {
+        position: sticky;
+        top: 0;
+        display: flex;
+        flex-flow: row nowrap;
+        padding-left: 5rem;
+        padding-bottom: 0.5rem;
+        padding-top: 0.25rem;
+        justify-content: space-between;
+        height: 60px;
+        background: rgba(0, 0, 20, 0.9);
+     
+
+        .logo {
+            display: flex;
+            margin-bottom: 0.5rem;
+
+            p {
+                line-height: 2.5rem;
+                margin-right: 1px;
+            }
+        }
+//nav mobile 
+
+        .nav-mobile{
+          display: none;  
+
+            .nav-mobile-list {
+                display: flex;
+                flex-flow: row nowrap;
+                margin: 1rem 5rem 1.5rem 0;
+
+                li,i:hover {
+                    color: var(--primary);
+                }
+
+                .deroulant {
+                
+                    cursor: pointer;
+                    p{
+                        font-weight: 400;
+                    }
+                  
+
+                    .deroulant-expertise {
+                        display: block;
+                        background: white;
+                         padding: 1rem 0 0 0;
+                         height: 150px;
+                         position: relative;
+                         top: 50px;
+                       
+                         li{
+                            margin:0 0 1rem 0;
+                            font-size: 15px;
+                            transition: 0.5s;
+                            padding: 0 0.5rem 0 0.5rem;
+                          border-bottom: 0;
+                         }
+                         li:hover{
+                            background: var(--primary);
+                          width: 100%;
+                          color: white;
+                         }
+                    }
+                }
+                li {
+                    margin: 0 1rem;
+                    font-weight: 700;
+
+                    a:hover {
+                        color: var(--primary);
+                    }
+                    i{
+                        float:right;
+                        overflow: hidden;
+                    }
+
+                    i:hover {
+                        color: var(--primary);
+                    }
+                }
+            }
+
+            .bouton {
+                margin: 0;
+
+                .btn-primary:hover {
+                    color: white;
+                }
+            }
+
+        }
+
+        }
+        //nav height screen
+        nav {
+            display: flex;
+            flex-flow: row nowrap;
+      
+
+            ul {
+                display: flex;
+                flex-flow: row nowrap;
+                margin: 1rem 5rem 1.5rem 0;
+
+                li,i:hover {
+                    color: var(--primary);
+                }
+
+                .deroulant {
+                
+                    cursor: pointer;
+
+                    .deroulant-expertise {
+                        display: none;
+                        background: var(--bleu-claire);
+                        z-index: 1000;
+                        position: absolute;
+                         top: 25px;
+                         right: 450px;
+                         padding: 1rem 0 0 0;
+                         border-radius: 3px;
+                         li{
+                            border-bottom: 1px solid var(--primary);
+                            margin:0 0 1rem 0;
+                            font-size: 15px;
+                            transition: 0.5s;
+                            padding: 0 0.5rem 0 0.5rem;
+                            a:hover {
+                                color: white;
+                            }
+                         }
+                         li:hover{
+                            background: var(--primary);
+                          width: 100%;
+                          color: white;
+                         }
+                    }
+                }
+
+                .deroulant:hover .deroulant-expertise {
+                    display: block;
+                }
+
+                li {
+                    margin: 0 1rem;
+                    font-weight: 700;
+
+                    a:hover {
+                        color: var(--primary);
+                    }
+
+                    i:hover {
+                        color: var(--primary);
+                    }
+                }
+            }
+
+            .bouton {
+                margin: 0;
+
+                .btn-primary:hover {
+                    color: white;
+                }
+            }
+
+        }
+    
+    
+    
+ 

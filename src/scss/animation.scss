@@ -1,0 +1,210 @@
+//animation accueil bienvenue
+@keyframes Bioprint {
+
+    0%{
+ opacity: 0;
+ transform: translateY(-100px);
+
+    }
+    50%{
+        opacity: 0.5;
+        transform: translateX(-100px);
+        transition: 4s;
+    }
+    70%{
+        opacity: 0.6;
+        transform: translateX(100px);
+        transition: 4s;
+    }
+    90%{
+        opacity: 1;
+        transition: 4s;
+        transform: translateY(-100px);
+    }
+    100%{
+        opacity: 1;
+        transition: 4s;
+    }
+}
+@keyframes bouton {
+
+    0%{
+ opacity: 0;
+ transform: translateX(200px);
+
+    }
+    50%{
+        opacity: 0.5;
+        transform: rotate(30deg);
+       
+    }
+    90%{
+        opacity: 1;
+        transform: rotate(25deg );  
+        
+    }
+    100%{
+        opacity: 1;
+        transform: rotate(0deg );  
+    }
+}
+//Animation service
+@keyframes service {
+    0%{
+        opacity: 0;
+   
+        transform: scale(0);
+    }
+    100%{
+        opacity: 100%;
+        transform: scale(1);
+    }
+
+}
+//presentation
+@keyframes reveal {
+    0%{
+        opacity: 0;
+   
+    }
+
+    100%{
+        opacity: 1;
+   
+    }
+}
+@keyframes translateTexte {
+
+    0%{
+        opacity: 0;
+        transform: translateX(-100px);
+  
+    }
+    100%{
+        opacity: 1;
+        transform: translate(0);
+    }
+
+
+}
+//Animation logo partenaire
+
+ @keyframes diaporama-logo {
+    0%{
+        opacity: 1;
+     transform: translateX(500px);
+    }
+    50%{
+        opacity: 1;
+        transition-duration: 4s;
+        transform: translateX(0px);
+    }
+    70%{
+        opacity: 1;
+        transform: translateX(-500px);
+    }
+    100%{
+        opacity: 1;
+  
+    }
+ }
+
+// Animations modernes de l'accueil.
+@keyframes heroReveal {
+    0% {
+        opacity: 0;
+        transform: translate3d(-28px, 22px, 0) scale(0.98);
+        filter: blur(8px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate3d(0, 0, 0) scale(1);
+        filter: blur(0);
+    }
+}
+
+@keyframes buttonReveal {
+    0% {
+        opacity: 0;
+        transform: translate3d(0, 22px, 0) scale(0.94);
+    }
+
+    70% {
+        opacity: 1;
+        transform: translate3d(0, -4px, 0) scale(1.02);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate3d(0, 0, 0) scale(1);
+    }
+}
+
+@keyframes cardRise {
+    0% {
+        opacity: 0;
+        transform: translate3d(0, 34px, 0);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@keyframes contentReveal {
+    0% {
+        opacity: 0;
+        transform: translate3d(-24px, 0, 0);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@keyframes logoFloat {
+    0%,
+    100% {
+        transform: translate3d(0, 0, 0);
+    }
+
+    50% {
+        transform: translate3d(0, -12px, 0);
+    }
+}
+
+@keyframes separatorSweep {
+    0%,
+    100% {
+        transform: translateX(-20%);
+    }
+
+    50% {
+        transform: translateX(160%);
+    }
+}
+
+@keyframes logoMarquee {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+@keyframes menuReveal {
+    0% {
+        opacity: 0;
+        transform: translateY(-8px) scale(0.98);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}

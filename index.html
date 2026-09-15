@@ -1,410 +1,371 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--style css general-->
-<link rel="stylesheet" href="css/bootstrap/bootstra.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" media="only screen and (max-width:500px)" href="/css/mobile.css">
-    <!--police-->
+    <!-- Styles: Bootstrap + point d'entree Sass unique de l'accueil. -->
+    <link rel="stylesheet" href="/assets/vendor/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
-    <!--icone fontawesone-->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/1fb4ceb8ae.js" crossorigin="anonymous"></script>
-    <title>Bioprint&communication</title>
+    <title>Bioprint & Communication | Accueil</title>
 </head>
 
 <body>
-
-    <!--EANTETE-->
-
-
-    <section class="entete">
+    <section class="entete" aria-label="Informations rapides">
         <div class="partie1">
             <div class="gauche">
-                <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                <a href="/" aria-label="LinkedIn Bioprint"><i class="fa-brands fa-linkedin"></i></a>
             </div>
             <div class="droit">
-                <i class="fa-solid fa-location-dot"></i>
+                <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
                 <p>Yaoundé-Cameroun</p>
                 <div class="separator-vertical"></div>
-                <i class="fa-solid fa-envelope"></i>
-                <p><a href="">bioprintsarl@gmail.com</a></p>
+                <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+                <p><a href="mailto:bioprintsarl@gmail.com">bioprintsarl@gmail.com</a></p>
             </div>
         </div>
     </section>
+
     <header>
-        <div class="logo">
-            <p>Bioprint</p><img src="img/logo bioprint-09.png" alt="" height="50px" width="50px">
-        </div>
-        <nav class="nav-mobile">
-            <div class="nav-mobile-icone">
-                <p>MENU</p>
-            </div>
-            <ul class="nav-mobile-list ">
+        <a class="logo" href="/" aria-label="Accueil Bioprint">
+            <p>Bioprint</p>
+            <img src="/assets/images/logo bioprint-09.png" alt="Logo Bioprint" height="50" width="50">
+        </a>
+
+        <nav class="nav-mobile" aria-label="Navigation mobile">
+            <button class="nav-mobile-icone" type="button" aria-expanded="false" aria-controls="navigation-mobile">
+                <span>MENU</span>
+                <i class="fa-solid fa-bars" aria-hidden="true"></i>
+            </button>
+            <ul class="nav-mobile-list" id="navigation-mobile">
                 <li><a href="/" class="active">ACCUEIL</a></li>
-                <li class="deroulant"> <p>EXPERTISE <i class="fa-solid fa-chevron-down">+</i></p>
+                <li class="deroulant">
+                    <p>EXPERTISE <i class="fa-solid fa-chevron-down" aria-hidden="true"></i></p>
                     <ul class="deroulant-expertise">
-                        <li> <a href="ServiceBio/conception.html">CREATION GRAPHIQUE</a></li>
-                        <li> <a href="">IMPRESSION NUMRIQUE</a></li>
-                        <li> <a href="">SERIGRAPHIE</a></li>
-                        <li> <a href="">IMPRESSION OFFSET</a></li>
-                        <li> <a href="">CONCEPTION SITE WEB</a></li>
+                        <li><a href="/pages/services/conception.html">CREATION GRAPHIQUE</a></li>
+                        <li><a href="/pages/services/impressions.html">IMPRESSION NUMÉRIQUE</a></li>
+                        <li><a href="/pages/services/serigraphie.html">SÉRIGRAPHIE</a></li>
+                        <li><a href="/pages/services/imprimerie.html">IMPRESSION OFFSET</a></li>
+                        <li><a href="/pages/services/conceptionsitweb.html">CONCEPTION SITE WEB</a></li>
                     </ul>
                 </li>
-                <li> <a href="ServiceBio/conception.html">NOS PRESTATIONS</a></li>
-                <li> <a href="/Apropos.html">A PROPOS</a></li>
-                <li> <a href="ContactezNous/contacternous.html">NOUS CONTACTER</a></li>
+                <li><a href="#expertise">NOS PRESTATIONS</a></li>
+                <li><a href="/pages/about.html">A PROPOS</a></li>
+                <li><a href="/pages/contact.html">NOUS CONTACTER</a></li>
             </ul>
         </nav>
-        <nav>
+
+        <nav class="nav-desktop" aria-label="Navigation principale">
             <ul>
                 <li><a href="/" class="active">ACCUEIL</a></li>
-                <li class="deroulant"> <a href="">EXPERTISE <i class="fa-solid fa-chevron-down"></i></a>
+                <li class="deroulant">
+                    <a href="#expertise">EXPERTISE <i class="fa-solid fa-chevron-down" aria-hidden="true"></i></a>
                     <ul class="deroulant-expertise">
-                        <li> <a href="">CREATION GRAPHIQUE</a></li>
-                        <li> <a href="">IMPRESSION NUMRIQUE</a></li>
-                        <li> <a href="">SERIGRAPHIE</a></li>
-                        <li> <a href="">IMPRESSION OFFSET</a></li>
-                        <li> <a href="">CONCEPTION SITE WEB</a></li>
+                        <li><a href="/pages/services/conception.html">CREATION GRAPHIQUE</a></li>
+                        <li><a href="/pages/services/impressions.html">IMPRESSION NUMÉRIQUE</a></li>
+                        <li><a href="/pages/services/serigraphie.html">SÉRIGRAPHIE</a></li>
+                        <li><a href="/pages/services/imprimerie.html">IMPRESSION OFFSET</a></li>
+                        <li><a href="/pages/services/conceptionsitweb.html">CONCEPTION SITE WEB</a></li>
                     </ul>
                 </li>
-                <li> <a href="">NOS PRESTATIONS</a></li>
-                <li> <a href="/Apropos.html">A PROPOS</a></li>
-                <li class="bouton"> <a href="ContactezNous/contacternous.html" class=" btn btn-primary">NOUS CONTACTER</a>
-                </li>
+                <li><a href="#expertise">NOS PRESTATIONS</a></li>
+                <li><a href="/pages/about.html">A PROPOS</a></li>
+                <li class="bouton"><a href="/pages/contact.html" class="btn btn-primary">NOUS CONTACTER</a></li>
             </ul>
         </nav>
     </header>
 
-    <!--accueil avec femme affro-->
+    <main>
+        <section class="accueil">
+            <div class="grid">
+                <div class="texte">
 
-    <section class="accueil">
-        <div class="grid">
+                    <h1>BioPrint & Communication</h1>
+                    <div class="separator-horizontal"></div>
+                    <h2>Expert en imprimerie et communication visuelle au Cameroun</h2>
+                </div>
+                <div class="grid-entiere">
+                    <a class="btn btn-primary" href="/pages/about.html">SAVOIR PLUS</a>
+                </div>
+            </div>
+        </section>
+
+        
+
+        <section class="service" aria-label="Services principaux">
+            <div class="service1">
+                <i class="fa-solid fa-pen-nib" aria-hidden="true"></i>
+                <a href="/pages/services/conception.html">CREATION GRAPHIQUE</a>
+                <p>Atteignez vos objectifs grâce à un contenu graphique à votre image et différenciant.</p>
+                <div class="lien-icone"><a class="details" href="/pages/services/conception.html">Plus de détails <i class="fa-solid fa-arrow-right"></i></a></div>
+            </div>
+            <div class="service">
+                <i class="fa-solid fa-print" aria-hidden="true"></i>
+                <a href="/pages/services/imprimerie.html">IMPRESSION OFFSET</a>
+                <p>Spécialiste de l'impression de brochures, catalogues, livres et imprimés marketing reliés.</p>
+                <div class="lien-icone"><a class="details" href="/pages/services/imprimerie.html">Plus de détails <i class="fa-solid fa-arrow-right"></i></a></div>
+            </div>
+            <div class="service">
+                <i class="fa-solid fa-layer-group" aria-hidden="true"></i>
+                <a href="/pages/services/impressions.html">IMPRESSION NUMÉRIQUE</a>
+                <p>L'impression numérique soutient la construction et la promotion de l'identité de votre marque.</p>
+                <div class="lien-icone"><a class="details" href="/pages/services/impressions.html">Plus de détails <i class="fa-solid fa-arrow-right"></i></a></div>
+            </div>
+            <div class="service">
+                <i class="fa-solid fa-shirt" aria-hidden="true"></i>
+                <a href="/pages/services/serigraphie.html">SÉRIGRAPHIE</a>
+                <p>Un marquage résistant, précis et pensé pour des couleurs intenses.</p>
+                <div class="lien-icone"><a class="details" href="/pages/services/serigraphie.html">Plus de détails <i class="fa-solid fa-arrow-right"></i></a></div>
+            </div>
+            <div class="service1">
+                <i class="fa-solid fa-globe" aria-hidden="true"></i>
+                <a href="/pages/services/conceptionsitweb.html">CONCEPTION SITE WEB</a>
+                <p>Création de sites web statiques et dynamiques pour votre présence digitale.</p>
+                <div class="lien-icone"><a class="details" href="/pages/services/conceptionsitweb.html">Plus de détails <i class="fa-solid fa-arrow-right"></i></a></div>
+            </div>
+        </section>
+       
+        <section class="presentation">
             <div class="texte">
-                <h1>BioPrint & Communication</h1>
-                <div class="separator-horizontal"></div>
-                <h1>Expert en imprimerie et communication au Cameroun</h1>
-            </div>
-
-            <div class="grid-entiere">
-                <div class="btn btn-primary "><a href="/Apropos.html"> SAVOIR PLUS</a></div>
-            </div>
-        </div>
-
-    </section>
-
-
-    <!--SERVICE-->
-    <section class="service">
-        <div class="service1">
-            <i class="fa-solid fa-pen-nib"></i>
-            <a href="/Ste web BioPrint SERVICES/conception.html"> CREATION GRAPHIQUE</a>
-            <p>
-                Atteignez vos objectifs grâce à un contenu graphique à votre image et différenciant ! 
-
-            </p>
-        </div>
-        <div class="service">
-            <i class="fa-solid fa-pen-nib"></i>
-            <a href="/Ste web BioPrint SERVICES/imprimerie.html">IMPRESSION OFFSET</a>
-            <p> spécialiste de l'impression de brochures,
-                 catalogues, livres et imprimés marketing reliés,
-                  à destination des PME</p>
-        </div>
-        <div class="service">
-            <i class="fa-solid fa-web-awesome"></i>
-            <a href="/Ste web BioPrint SERVICES/impressions.html"> IMPRESSION NUMERIQUE</a>
-            <p>
-                L’impression numérique joue un rôle crucial 
-                dans la construction et la promotion de 
-                l’identité de votre marque. 
-            </p>
-        </div>
-        <div class="service">
-            <i class="fa-solid fa-web-awesome"> </i>
-            <a href="/Ste web BioPrint SERVICES/serigraphie.html"> SERIGRAPHIE</a>
-            <p>
-                La sérigraphie pour un marquage résistant aux couleurs intenses.
-            </p>
-        </div>
-        <div class="service1">
-            <i class="fa-solid fa-web-awesome"></i>
-            <a href="/Ste web BioPrint SERVICES/conceptionsitweb.html">CONCEPTION SITE WEB</a>
-            <p>Conception des sites web statique et dynamique </p>
-        </div>
-    </section>
-
-    <!--presentation-->
-    <section class="presentation">
-        <div class="texte">
-            <p>BIOPRINT & COMMUNICATION</p>
-            <div class="question">
-                <h2>Qui sommes nous?</h2>
-            </div>
-            <p class="contenu-paragraphe">
-                Notre entreprise
-                <br>
-             Créée dans la commune Yaoundé 4eme , Bioprint  est une agence de communication digital et print
-            </p>
-            <div class="experience">
-
-                <div class="cadre">
-                    <h1>10 ans</h1>
-                    <p>d'experiences</p>
+                <p>BIOPRINT & COMMUNICATION</p>
+                <div class="question">
+                    <h2>Qui sommes-nous?</h2>
                 </div>
-            </div>
-
-        </div>
-        <div class="logo-presentation">
-            <img src="/img/logo bioprint-09.png" alt="" height="100%">
-        </div>
-
-    </section>
-
-
-
-
-    <!--Expertise-->
-    <section class="expertise" id="expertise">
-        <h1>Notre Expertise</h1>
-        <div class="separator-horizontal"></div>
-
-        <div class="les-expertises">
-
-            <div class="services">
-                <i class="fa-solid fa-pen-nib"></i>
-                <a href="/Ste web BioPrint SERVICES/conception.html"> CREATION GRAPHIQUE</a>
-                <p>
-                    Atteignez vos objectifs grâce à un contenu graphique à votre image et différenciant ! 
+                <p class="contenu-paragraphe">
+                    Créée dans la commune de Yaoundé 4eme, Bioprint est une agence de communication digitale et print,
+                    avec la maîtrise de toute la chaîne de production dans les domaines suivants :
                 </p>
-                <div class="lien-icone">
-                    <a class="details" href="/Ste web BioPrint SERVICES/conception.html"> Plus de details <i class="fa-solid fa-arrow-right"></i> </a>
-                </div>
-
-            </div>
-            <div class="services box-shadow"><i class="fa-solid fa-pen-nib"></i>
-                <a href="/Ste web BioPrint SERVICES/imprimerie.html"> IMPRESSION OFFSET</a>
-                <p>
-                    spécialiste de l'impression de brochures, 
-                    catalogues, livres et imprimés marketing reliés,
-                     à destination des PME.
-                </p>
-                <div class="lien-icone">
-                    <a class="details" href="/Ste web BioPrint SERVICES/imprimerie.html"> Plus de details <i class="fa-solid fa-arrow-right"></i> </a>
-                </div>
-            </div>
-            <div class="services ">
-                <i class="fa-solid fa-pen-nib"></i>
-                <a href="/Ste web BioPrint SERVICES/impressions.html"> IMPRESSION NUMRIQUE</a>
-                <p>
-                    L’impression numérique joue un rôle crucial 
-                    dans la construction et la promotion de
-                     l’identité de votre marque. 
-                </p>
-                <div class="lien-icone">
-                    <a class="details" href="/Ste web BioPrint SERVICES/impressions.html"> Plus de details <i class="fa-solid fa-arrow-right"></i> </a>
+                <ul class="liste-domaines">
+                    <li>Création graphique</li>
+                    <li>Impression offset</li>
+                    <li>Impression numérique</li>
+                    <li>Sérigraphie</li>
+                    <li>Conception site web</li>
+                    <li>Signalétique &amp; gadgets</li>
+                </ul>
+                <a class="btn btn-primary voir-plus" href="/pages/about.html">Voir plus</a>
+                <div class="experience">
+                    <div class="cadre">
+                        <h1>10 ans</h1>
+                        <p>d'expérience</p>
+                    </div>
                 </div>
             </div>
-            <div class="services box-shadow">
-                <i class="fa-solid fa-pen-nib"></i>
-                <a href="/Ste web BioPrint SERVICES/serigraphie.html"> SERIGRAPHIE</a>
-                <p>
-                    La sérigraphie pour un marquage résistant aux couleurs intenses.
-                </p>
-                <div class="lien-icone">
-                    <a class="details" href="/Ste web BioPrint SERVICES/serigraphie.html"> Plus de details <i class="fa-solid fa-arrow-right"></i> </a>
+            <div class="logo-presentation">
+                <img src="/assets/images/logo bioprint-09.png" alt="Logo Bioprint">
+            </div>
+        </section>
+
+        <section class="expertise" id="expertise">
+              
+            <p class="section-kicker">NOTRE EXPERTISE</p>
+            <h1>Des supports visuels pour faire rayonner votre marque</h1>
+            <div class="separator-horizontal"></div>
+            <div class="les-expertises">
+                <div class="services">
+                    <i class="fa-solid fa-pen-nib" aria-hidden="true"></i>
+                    <a href="/pages/services/conception.html">CREATION GRAPHIQUE</a>
+                    <p>Identités visuelles, flyers, affiches et supports pensés pour capter l'attention.</p>
+                    <div class="lien-icone"><a class="details" href="/pages/services/conception.html">Plus de détails <i class="fa-solid fa-arrow-right"></i></a></div>
+                </div>
+                <div class="services box-shadow">
+                    <i class="fa-solid fa-print" aria-hidden="true"></i>
+                    <a href="/pages/services/imprimerie.html">IMPRESSION OFFSET</a>
+                    <p>Brochures, catalogues, livres et imprimés marketing avec une finition professionnelle.</p>
+                    <div class="lien-icone"><a class="details" href="/pages/services/imprimerie.html">Plus de détails <i class="fa-solid fa-arrow-right"></i></a></div>
+                </div>
+                <div class="services">
+                    <i class="fa-solid fa-layer-group" aria-hidden="true"></i>
+                    <a href="/pages/services/impressions.html">IMPRESSION NUMÉRIQUE</a>
+                    <p>Solutions rapides et flexibles pour vos campagnes, prototypes et petites séries.</p>
+                    <div class="lien-icone"><a class="details" href="/pages/services/impressions.html">Plus de détails <i class="fa-solid fa-arrow-right"></i></a></div>
+                </div>
+                <div class="services box-shadow">
+                    <i class="fa-solid fa-shirt" aria-hidden="true"></i>
+                    <a href="/pages/services/serigraphie.html">SÉRIGRAPHIE</a>
+                    <p>Marquage textile et objets publicitaires avec des couleurs nettes et durables.</p>
+                    <div class="lien-icone"><a class="details" href="/pages/services/serigraphie.html">Plus de détails <i class="fa-solid fa-arrow-right"></i></a></div>
+                </div>
+                <div class="services box-shadow">
+                    <i class="fa-solid fa-globe" aria-hidden="true"></i>
+                    <a href="/pages/services/conceptionsitweb.html">CONCEPTION SITE WEB</a>
+                    <p>Sites vitrines et plateformes simples pour rendre vos offres plus accessibles.</p>
+                    <div class="lien-icone"><a class="details" href="/pages/services/conceptionsitweb.html">Plus de détails <i class="fa-solid fa-arrow-right"></i></a></div>
+                </div>
+                <div class="services box-shadow">
+                    <i class="fa-solid fa-signs-post" aria-hidden="true"></i>
+                    <a href="/pages/contact.html">SIGNALÉTIQUE & GADGETS</a>
+                    <p>Supports événementiels, habillage véhicule, PLV et objets de marque.</p>
+                    <div class="lien-icone"><a class="details" href="/pages/contact.html">Plus de détails <i class="fa-solid fa-arrow-right"></i></a></div>
                 </div>
             </div>
-            <div class="services box-shadow">
-                <i class="fa-solid fa-pen-nib"></i>
-                <a href="/Ste web BioPrint SERVICES/conceptionsitweb.html"> CONCEPTION SITE WEB</a>
-                <p>Conception des logos, flyers, banderole, etc
-                    Conception des logos, flyers, banderole, etc
-                </p>
-                <div class="lien-icone">
-                    <a class="details" href="/Ste web BioPrint SERVICES/conceptionsitweb.html"> Plus de details <i class="fa-solid fa-arrow-right"></i> </a>
+        </section>
+
+        <section class="chiffres-cles" aria-label="Bioprint en chiffres">
+            <div class="chiffre">
+                <i class="fa-solid fa-award" aria-hidden="true"></i>
+                <h2>10 ans</h2>
+                <p>d'expérience</p>
+            </div>
+            <div class="chiffre">
+                <i class="fa-solid fa-palette" aria-hidden="true"></i>
+                <h2>6</h2>
+                <p>domaines d'expertise</p>
+            </div>
+            <div class="chiffre">
+                <i class="fa-solid fa-handshake" aria-hidden="true"></i>
+                <h2>8</h2>
+                <p>partenaires de confiance</p>
+            </div>
+        </section>
+
+        <section class="notre-equipe">
+            <div class="filtre">
+                <div class="image" aria-hidden="true"></div>
+                <div class="texte">
+                    <p>NOTRE EQUIPE</p>
+                    <div class="titre-aquipe">
+                        <h2>Une équipe de créativité et d'innovation</h2>
+                    </div>
+                    <p class="text-description">
+                        Nous réunissons des profils créatifs, techniques et commerciaux pour transformer vos idées en supports visibles, utiles et mémorables.
+                    </p>
                 </div>
             </div>
-            <div class="services box-shadow">
-                <i class="fa-solid fa-pen-nib"></i>
-                <a href=""> CREATION GRAPHIQUE</a>
-                <p>Conception des logos, flyers, banderole, etc
-                    Conception des logos, flyers, banderole, etc
-                </p>
-                <div class="lien-icone">
-                    <a class="details" href=""> Plus de details <i class="fa-solid fa-arrow-right"></i> </a>
+        </section>
+
+        <section class="clients">
+            <p>NOS CLIENTS</p>
+            <h1>Ils nous font confiance</h1>
+            <div class="separator-horizontal"></div>
+            <div class="logo-clients">
+                <div class="logo-track">
+                    <div class="logo-track-content">
+                        <img src="/assets/images/photo_2024-08-11_14-02-10 (2).jpg" alt="Logo Hôtel de la Vallée">
+                        <img src="/assets/images/photo_2024-08-11_14-02-10.jpg" alt="Logo Les Laboratoires Gigy Pharma">
+                        <img src="/assets/images/minsanter.jpeg" alt="Logo Minsanté">
+                        <img src="/assets/images/photo_2024-08-11_14-02-11.jpg" alt="Logo Forces Armées Camerounaises">
+                        <img src="/assets/images/mufid.jpg" alt="Logo Mufid Union">
+                        <img src="/assets/images/muffa.jpg" alt="Logo Muffa">
+                        <img src="/assets/images/IMG3.jpeg" alt="Logo Ministère des Arts et de la Culture">
+                        <img src="/assets/images/centre de developpment .png" alt="Logo Centre pour l'Environnement et le Développement">
+                        <img src="/assets/images/pph.jpg" alt="Logo PPH Sarl">
+                        <img src="/assets/images/nouveau logo creat 2.png" alt="Logo Create Solution Enterprise">
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <!--Notre equipe-->
+        </section>
 
-    <section class="notre-equipe">
-        <div class="filtre">
-            <div class="image">
-            </div>
-            <div class="texte">
-                <p>NOTRE EQUIPE</p>
-                <div class="titre-aquipe">
-                    <h2>Une équipe de créativité et d'innovation</h2>
-                </div>
-                <p class="text-description">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum, fugit?
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum, fugit?
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum, fugit?
-                </p>
-                <!-- <div class="grid-entiere">
-                    <div class="btn btn-primary "><a href=""> SAVOIR PLUS</a></div>
-                </div> -->
-            </div>
-        </div>
-
-    </section>
-
-
-
-
-
-
-<!--Nos clients-->
-<section class="clients">
-    <p>NOS CLIENTS</p>
-    <h1>Ils nous font confiance</h1>
-    <div class="separator-horizontal"></div>
-
-    <!--Diapo logo client -->
-    <div class="logo-clients">
-        <div class="image">
-            <input type="radio" name="diapo" id="img1">
-            <input type="radio" name="diapo" id="img2">
-            <input type="radio" name="diapo" id="img3">
-            <input type="radio" name="diapo" id="img4">
-            <img src="/img/photo_2024-08-11_14-02-10 (2).jpg" alt=" logo centre de developpement" class="diapo1">
-            <img src="/img/photo_2024-08-11_14-02-10.jpg" alt=" logo ministère des arts" class="diapo2">
-            <img src="/img/photo_2024-08-11_14-02-11 (3).jpg" alt=" logo minsante" class="diapo3">
-            <img src="/img/photo_2024-08-11_14-02-11.jpg" alt=" logo unicef" class="diapo4">
-        </div>
-
-        <div class="declancheur">
-            <label for="img1"></label>
-            <label for="img2"></label>
-            <label for="img3"></label>
-            <label for="img4"></label>
-        </div>
-    </div>
-  
-</section>
-    <!--Nous contacter-->
-    <section class="contacter-nous">
-        <p>NOUS CONTACTER</p>
-        <div class="message">
-            <h2>Ecrivez nous un message</h2>
-        </div>
-        <form action="" method="POST">
-            <div class="block-input">
-                <input type="text" name="name" placeholder="Nom">
-                <input type="text" name="name" placeholder="Numero de téléphone">
-            </div>
-            <div class="block-input-envoyer">
-                <input type="email" name="email" placeholder="email">
-                <button>Envoyer</button>
-            </div>
-
-        </form>
-
-    </section>
-    <!--Actualité-->
-    <section class="actualité">
-        <div class="block-1">
-            <p>ACTUALITES</p>
+        <section class="contacter-nous">
+            <p>NOUS CONTACTER</p>
             <div class="message">
-                <h2>Nos dernières services et prestations</h2>
+                <h2>Écrivez-nous un message et restons connecter !!</h2>
             </div>
-            <div class="bouton">
-                <div class="btn btn-primary "><a href=""> SAVOIR PLUS</a></div>
+            <form action="" method="POST">
+                <div class="block-input">
+                    <input type="text" name="name" placeholder="Nom">
+                    <input type="tel" name="phone" placeholder="Numéro de téléphone">
+                </div>
+                <div class="block-input-envoyer">
+                    <input type="email" name="email" placeholder="Email">
+                    <button type="submit">Envoyer</button>
+                </div>
+            </form>
+        </section>
+
+        <section class="actualite">
+            <div class="block-1">
+                <p>ACTUALITÉS</p>
+                <div class="message">
+                    <h2>Ce qui se passe en ce moment chez Bioprint</h2>
+                </div>
+                <div class="bouton">
+                    <a class="btn btn-primary" href="#expertise">SAVOIR PLUS</a>
+                </div>
             </div>
-        </div>
-        <div class="block">
-            <div class="image">
-            </div>
-            <a href=""> Conception d'un roll up </a>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum?</p>
-        </div>
-        <div class="block">
-            <div class="image">
+            <article class="block">
+                <div class="image image-1" aria-hidden="true"></div>
+                <a href="/pages/services/conception.html">Nouvelles illustrations afro-contemporaines</a>
+                <p>Nos dernières créations graphiques puisent dans les couleurs et motifs de l'art africain pour des visuels qui marquent les esprits.</p>
+            </article>
+            <article class="block">
+                <div class="image image-2" aria-hidden="true"></div>
+                <a href="/pages/services/serigraphie.html">Sérigraphie : nos derniers marquages textiles</a>
+                <p>Textiles et objets promotionnels marqués de motifs afro pour vos équipes et vos événements.</p>
+            </article>
+        </section>
+    </main>
 
-            </div>
-            <a href=""> Conception d'un roll up </a>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum?</p>
-        </div>
-    </section>
-
-
-
-    <!--Footer-->
     <footer>
         <section class="filtre">
-            <div class="contenaire">
+            <div class="contenaire contenaire-4col">
                 <div class="block-1">
                     <div class="text-logo">
-                        <p>Bioprint</p><img src="img/logo bioprint-09.png" alt="" height="100px" width="100px">
+                        <p>Bioprint</p>
+                        <img src="/assets/images/logo bioprint-09.png" alt="Logo Bioprint" height="100" width="100">
                     </div>
                 </div>
                 <div class="block">
                     <h1>EXPERTISES</h1>
                     <ul>
-                        <li><a href="/Ste web BioPrint SERVICES/conception.html">Création graphique</a></li>
-                        <li><a href="/Ste web BioPrint SERVICES/imprimerie.html">Impression offset</a></li>
-                        <li><a href="/Ste web BioPrint SERVICES/impressions.html">Impression numérique</a></li>
-                        <li><a href="/Ste web BioPrint SERVICES/serigraphie.html">Serigraphie</a></li>
-                        <li><a href="/Ste web BioPrint SERVICES/conceptionsitweb.html">Conception site web</a></li>
-                        <li><a href="">Habillage véhicule</a></li>
-                        <li><a href="">Supports PVL& Evénementiel</a></li>
-                        <li><a href="">Photogravure</a></li>
-                        <li><a href="">Signalétique</a></li>
-                        <li><a href="">Gadgets</a></li>
-                        <li><a href="">Flocage</a></li>
+                        <li><a href="/pages/services/conception.html">Création graphique</a></li>
+                        <li><a href="/pages/services/imprimerie.html">Impression offset</a></li>
+                        <li><a href="/pages/services/impressions.html">Impression numérique</a></li>
+                        <li><a href="/pages/services/serigraphie.html">Sérigraphie</a></li>
+                        <li><a href="/pages/services/conceptionsitweb.html">Conception site web</a></li>
+                        <li><a href="/pages/contact.html">Habillage véhicule</a></li>
+                        <li><a href="/pages/contact.html">Supports PLV & Événementiel</a></li>
+                        <li><a href="/pages/contact.html">Signalétique</a></li>
                     </ul>
                 </div>
                 <div class="block-contact">
                     <h1>NOUS CONTACTER</h1>
-                    <p>Notre bureau se trouve à Yaoundé au carrefour IPTEC illeuble BAYIGA CENTER (face maison de la
-                        femme
-                        Nkoldongo) </p>
+                    <p>Notre bureau se trouve à Yaoundé au carrefour IPTEC, immeuble BAYIGA CENTER, face maison de la femme Nkoldongo.</p>
                     <div class="icone-texte">
-                        <i class="fa-solid fa-location-dot"></i>
+                        <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
                         <p>:Yaoundé-Cameroun</p>
                     </div>
-
                     <div class="icone-texte">
-                        <i class="fa-solid fa-phone"></i>
-                        <p> : +237 677 26 48 28 /691 03 99 13</p>
+                        <i class="fa-solid fa-phone" aria-hidden="true"></i>
+                        <p>: +237 677 26 48 28 / 691 03 99 13</p>
                     </div>
                     <div class="icone-texte">
-                        <i class="fa-solid fa-envelope"></i>
-                        <p><a href="">:bioprintsarl@gmail.com</a></p>
+                        <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+                        <p><a href="mailto:bioprintsarl@gmail.com">:bioprintsarl@gmail.com</a></p>
                     </div>
-
-
                 </div>
-
+                <div class="block-newsletter">
+                    <h1>NEWSLETTER</h1>
+                    <p>Recevez nos actualités et nos dernières créations directement par email.</p>
+                    <form class="form-newsletter" action="" method="POST">
+                        <label for="newsletter-email" class="visually-hidden">Adresse email</label>
+                        <input type="email" id="newsletter-email" name="email" placeholder="Entrez votre adresse email" required>
+                        <button type="submit" aria-label="S'inscrire à la newsletter"><i class="fa-solid fa-paper-plane" aria-hidden="true"></i></button>
+                    </form>
+                    <div class="suivez-nous">
+                        <p>SUIVEZ-NOUS</p>
+                        <div class="reseaux">
+                            <a href="/" aria-label="LinkedIn Bioprint"><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i></a>
+                            <a href="/" aria-label="Facebook Bioprint"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a>
+                            <a href="/" aria-label="Instagram Bioprint"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="fin">
-                <a href="/"><i class="fa-brands fa-linkedin"></i></a>
-                <p> © Copyright 2024 pphsarl tous droits réservés!</p>
-
+                <a href="/" aria-label="LinkedIn Bioprint"><i class="fa-brands fa-linkedin"></i></a>
+                <p>© Copyright 2024 pphsarl tous droits réservés!</p>
             </div>
         </section>
     </footer>
-<script  src="/js/index-menu.js"></script>
-<script src="bootstrapjs/bootstrap.bundle.js"></script>
 
+    <script src="/assets/js/index-menu.js"></script>
+    <script src="/assets/js/logo-marquee.js"></script>
+    <script src="/assets/vendor/bootstrap/js/bootstrap.bundle.js"></script>
 </body>
-
 
 </html>

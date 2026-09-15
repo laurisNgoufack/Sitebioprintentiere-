@@ -1,9 +1,14 @@
 {
   "name": "ste-web-bioprint",
   "version": "1.0.0",
-  "main": "index.js",
+  "private": true,
   "scripts": {
-    "sass": "sass -w scss:css"
+    "build:styles": "npm run build:styles:home && npm run build:styles:contact && npm run build:styles:services",
+    "build:styles:home": "sass src/scss/style.scss assets/css/style.css --style=expanded --source-map",
+    "build:styles:contact": "sass src/scss/contact/nous-contacter.scss assets/css/contact/nous-contacter.css --style=expanded --source-map",
+    "build:styles:services": "sass src/scss/services/style.scss assets/css/services/style.css --style=expanded --source-map",
+    "watch:styles": "sass --watch src/scss/style.scss:assets/css/style.css src/scss/contact/nous-contacter.scss:assets/css/contact/nous-contacter.css src/scss/services/style.scss:assets/css/services/style.css",
+    "sass": "npm run watch:styles"
   },
   "keywords": [],
   "author": "",

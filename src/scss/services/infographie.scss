@@ -1,0 +1,111 @@
+@import "variable";
+@import "general";
+
+.info {
+
+
+
+  .images {
+
+    background: url(/assets/images/services/guide.jpg) center center/cover;
+    width: 100%;
+     min-height: 50vh;
+   
+
+  
+     .image  {
+      background: rgba(2, 1, 1, 0.7) center center/cover;
+      width: 100%;
+     min-height: 50vh;
+   
+   
+     }
+  
+     .separator  {
+      padding: 1rem 5rem 1rem 5rem;
+      padding-top: 15%;
+      text-align: center;
+     
+     }
+     .separator h1 {
+      font-size: 50px;
+      color: white;
+     }
+  
+  }
+  
+  .container {
+    padding: 1rem 5rem 1rem 5rem;
+    min-height: 70vh;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin: 0 5rem 0.5rem 5rem;
+    p {
+      color:var(--gry);
+    }
+
+  .item {
+    flex: 1 1 320px;
+    min-width: 0;
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+
+  .item h1 {
+    padding-left: 1px;
+    border-left: 1px solid var(--primary);
+
+  }
+
+  }
+  .list {
+    letter-spacing: 1px;
+    color:var(--gry);
+    padding: 1rem 5rem 1rem 5rem;
+    font-family: "Montserrat", sans-serif;
+  }
+
+
+}
+
+@media (max-width: $bp-tablet) {
+  .info {
+    .images {
+      min-height: 40vh;
+
+      .image {
+        min-height: 40vh;
+      }
+
+      .separator {
+        padding: 1rem;
+        padding-top: 10%;
+
+        h1 {
+          font-size: 2rem;
+        }
+      }
+    }
+
+    .container {
+      padding: 2rem 1.5rem;
+      margin: 0;
+      text-align: center;
+
+      .item {
+        flex-basis: 100%;
+      }
+    }
+
+    .list {
+      padding: 1rem 1.5rem;
+    }
+  }
+}
+

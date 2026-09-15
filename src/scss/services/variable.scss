@@ -1,0 +1,23 @@
+// 
+:root {
+    --primary: #079926;
+    --primary1:#0799278e;
+    --bleu: #2291db;
+    --bleu-claire: #81afcf93;
+    --gry-claire: #dfe6e9;
+    --gry: #b2bec3;
+    --box-shadow: none;
+    --bleu-sombre: #0e4194;
+
+}
+
+
+.box-shadow {
+    box-shadow: none;
+}
+
+.active {
+    color: var(--primary);
+    height: 100%;
+    width: 100px;
+}
